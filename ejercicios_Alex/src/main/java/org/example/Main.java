@@ -18,17 +18,27 @@ public class Main {
         System.out.println("¿ A que curso vas ?");
         String curso = entrada.next();
 
-        System.out.println("hola + nombre + bienvenido a "+ curso);
+        System.out.println("hola + nombre + bienvenido a " + curso);
+
+        int num1 = 0;
+        int num2 = 0;
+while (num1==num2){
+        System.out.println("Introduce un numero...");
+        num1 = entrada.nextInt();
 
         System.out.println("Introduce un numero...");
-        int num1 = entrada.nextInt();
+        num2 = entrada.nextInt();
 
-        System.out.println("Introduce un numero...");
-        int num2 = entrada.nextInt();
+        if (num1==num2){
+            System.out.println("ERROR. LOS NUMEROS SON IGUALES.");
+        }
+
+        }
 
         int resultado = num1 + num2;
 
         System.out.println("el resultado de la suma es" + resultado);
+
 
         ejercicios ejercicios_inicial = new ejercicios ();
         ejercicios.actividad_inicial();
